@@ -5,6 +5,7 @@ import XML from './XML';
 import UIKit from './UIKit';
 import Spine from './Spine';
 import PLIST from './PLIST';
+import PLIST2 from './PLIST2';
 
 const list = [
     Grid,
@@ -13,7 +14,8 @@ const list = [
     XML,
     UIKit,
     Spine,
-    PLIST
+    PLIST,
+    PLIST2
 ];
 
 function getSplitterByType(type) {
