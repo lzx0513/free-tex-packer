@@ -6,6 +6,7 @@ import UIKit from './UIKit';
 import Spine from './Spine';
 import PLIST from './PLIST';
 import PLIST2 from './PLIST2';
+import DBJson from './DBJson';
 
 const list = [
     Grid,
@@ -15,7 +16,8 @@ const list = [
     UIKit,
     Spine,
     PLIST,
-    PLIST2
+    PLIST2,
+    DBJson,
 ];
 
 function getSplitterByType(type) {
