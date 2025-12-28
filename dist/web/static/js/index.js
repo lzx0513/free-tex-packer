@@ -12885,7 +12885,7 @@ function simpleEnd(buf) {
 /* 154 */
 /***/ (function(module) {
 
-module.exports = JSON.parse("[{\"type\":\"JSON (hash)\",\"description\":\"Json hash\",\"allowTrim\":true,\"allowRotation\":true,\"template\":\"JsonHash.mst\",\"fileExt\":\"json\"},{\"type\":\"JSON (array)\",\"description\":\"Json array\",\"allowTrim\":true,\"allowRotation\":true,\"template\":\"JsonArray.mst\",\"fileExt\":\"json\"},{\"type\":\"XML\",\"description\":\"Plain XML format\",\"allowTrim\":true,\"allowRotation\":true,\"template\":\"XML.mst\",\"fileExt\":\"xml\"},{\"type\":\"css (modern)\",\"description\":\"css format\",\"allowTrim\":true,\"allowRotation\":true,\"template\":\"Css.mst\",\"fileExt\":\"css\"},{\"type\":\"css (old)\",\"description\":\"old css format\",\"allowTrim\":false,\"allowRotation\":false,\"template\":\"OldCss.mst\",\"fileExt\":\"css\"},{\"type\":\"pixi.js\",\"description\":\"pixi.js format\",\"allowTrim\":true,\"allowRotation\":true,\"template\":\"JsonHash.mst\",\"fileExt\":\"json\"},{\"type\":\"Godot (atlas)\",\"description\":\"Godot Atlas format\",\"allowTrim\":true,\"allowRotation\":true,\"template\":\"GodotAtlas.mst\",\"fileExt\":\"tpsheet\"},{\"type\":\"Godot (tileset)\",\"description\":\"Godot Tileset format\",\"allowTrim\":true,\"allowRotation\":true,\"template\":\"GodotTileset.mst\",\"fileExt\":\"tpset\"},{\"type\":\"Phaser (hash)\",\"description\":\"Phaser (json hash)\",\"allowTrim\":true,\"allowRotation\":true,\"template\":\"JsonHash.mst\",\"fileExt\":\"json\"},{\"type\":\"Phaser (array)\",\"description\":\"Phaser (json array)\",\"allowTrim\":true,\"allowRotation\":true,\"template\":\"JsonArray.mst\",\"fileExt\":\"json\"},{\"type\":\"Phaser 3\",\"description\":\"Phaser 3\",\"allowTrim\":true,\"allowRotation\":true,\"template\":\"Phaser3.mst\",\"fileExt\":\"json\"},{\"type\":\"Spine\",\"description\":\"Spine atlas\",\"allowTrim\":true,\"allowRotation\":true,\"template\":\"Spine.mst\",\"fileExt\":\"atlas\"},{\"type\":\"cocos2d\",\"description\":\"cocos2d format\",\"allowTrim\":true,\"allowRotation\":true,\"template\":\"Cocos2d.mst\",\"fileExt\":\"plist\"},{\"type\":\"UnrealEngine\",\"description\":\"UnrealEngine - Paper2d\",\"allowTrim\":true,\"allowRotation\":true,\"template\":\"Unreal.mst\",\"fileExt\":\"paper2dsprites\"},{\"type\":\"Starling\",\"description\":\"Starling format\",\"allowTrim\":true,\"allowRotation\":true,\"template\":\"Starling.mst\",\"fileExt\":\"xml\"},{\"type\":\"UIKit\",\"description\":\"UIKit sprite sheet\",\"allowTrim\":true,\"allowRotation\":false,\"template\":\"UIKit.mst\",\"fileExt\":\"plist\",\"predefined\":true},{\"type\":\"Unity3D\",\"description\":\"Unity3D sprite sheet\",\"allowTrim\":true,\"allowRotation\":false,\"template\":\"Unity3D.mst\",\"fileExt\":\"tpsheet\",\"predefined\":true},{\"type\":\"Egret2D\",\"description\":\"Egret2D sprite sheet\",\"allowTrim\":false,\"allowRotation\":false,\"template\":\"Egret2D.mst\",\"fileExt\":\"json\",\"predefined\":true},{\"type\":\"custom\",\"description\":\"Custom format\",\"allowTrim\":true,\"allowRotation\":true,\"template\":\"\",\"fileExt\":\"\"}]");
+module.exports = JSON.parse("[{\"type\":\"cocos2d(PLIST)\",\"description\":\"cocos2d format\",\"allowTrim\":true,\"allowRotation\":true,\"template\":\"Cocos2d.mst\",\"fileExt\":\"plist\"},{\"type\":\"Spine(atlas)\",\"description\":\"Spine atlas\",\"allowTrim\":true,\"allowRotation\":true,\"template\":\"Spine.mst\",\"fileExt\":\"atlas\"},{\"type\":\"DBJson(龙骨)\",\"description\":\"DBJson json\",\"allowTrim\":true,\"allowRotation\":false,\"removeFileExtension\":true,\"template\":\"DBJson.mst\",\"fileExt\":\"json\"},{\"type\":\"JSON (hash)\",\"description\":\"Json hash\",\"allowTrim\":true,\"allowRotation\":true,\"template\":\"JsonHash.mst\",\"fileExt\":\"json\"},{\"type\":\"JSON (array)\",\"description\":\"Json array\",\"allowTrim\":true,\"allowRotation\":true,\"template\":\"JsonArray.mst\",\"fileExt\":\"json\"},{\"type\":\"XML\",\"description\":\"Plain XML format\",\"allowTrim\":true,\"allowRotation\":true,\"template\":\"XML.mst\",\"fileExt\":\"xml\"},{\"type\":\"css (modern)\",\"description\":\"css format\",\"allowTrim\":true,\"allowRotation\":true,\"template\":\"Css.mst\",\"fileExt\":\"css\"},{\"type\":\"css (old)\",\"description\":\"old css format\",\"allowTrim\":false,\"allowRotation\":false,\"template\":\"OldCss.mst\",\"fileExt\":\"css\"},{\"type\":\"pixi.js\",\"description\":\"pixi.js format\",\"allowTrim\":true,\"allowRotation\":true,\"template\":\"JsonHash.mst\",\"fileExt\":\"json\"},{\"type\":\"Godot (atlas)\",\"description\":\"Godot Atlas format\",\"allowTrim\":true,\"allowRotation\":true,\"template\":\"GodotAtlas.mst\",\"fileExt\":\"tpsheet\"},{\"type\":\"Godot (tileset)\",\"description\":\"Godot Tileset format\",\"allowTrim\":true,\"allowRotation\":true,\"template\":\"GodotTileset.mst\",\"fileExt\":\"tpset\"},{\"type\":\"Phaser (hash)\",\"description\":\"Phaser (json hash)\",\"allowTrim\":true,\"allowRotation\":true,\"template\":\"JsonHash.mst\",\"fileExt\":\"json\"},{\"type\":\"Phaser (array)\",\"description\":\"Phaser (json array)\",\"allowTrim\":true,\"allowRotation\":true,\"template\":\"JsonArray.mst\",\"fileExt\":\"json\"},{\"type\":\"Phaser 3\",\"description\":\"Phaser 3\",\"allowTrim\":true,\"allowRotation\":true,\"template\":\"Phaser3.mst\",\"fileExt\":\"json\"},{\"type\":\"UnrealEngine\",\"description\":\"UnrealEngine - Paper2d\",\"allowTrim\":true,\"allowRotation\":true,\"template\":\"Unreal.mst\",\"fileExt\":\"paper2dsprites\"},{\"type\":\"Starling\",\"description\":\"Starling format\",\"allowTrim\":true,\"allowRotation\":true,\"template\":\"Starling.mst\",\"fileExt\":\"xml\"},{\"type\":\"UIKit\",\"description\":\"UIKit sprite sheet\",\"allowTrim\":true,\"allowRotation\":false,\"template\":\"UIKit.mst\",\"fileExt\":\"plist\",\"predefined\":true},{\"type\":\"Unity3D\",\"description\":\"Unity3D sprite sheet\",\"allowTrim\":true,\"allowRotation\":false,\"template\":\"Unity3D.mst\",\"fileExt\":\"tpsheet\",\"predefined\":true},{\"type\":\"Egret2D\",\"description\":\"Egret2D sprite sheet\",\"allowTrim\":false,\"allowRotation\":false,\"template\":\"Egret2D.mst\",\"fileExt\":\"json\",\"predefined\":true},{\"type\":\"custom\",\"description\":\"Custom format\",\"allowTrim\":true,\"allowRotation\":true,\"template\":\"\",\"fileExt\":\"\"}]");
 
 /***/ }),
 /* 155 */
@@ -41075,9 +41075,12 @@ var PackProperties_PackProperties = /*#__PURE__*/function (_React$Component) {
       var exporter = getExporterByType(react_dom_default.a.findDOMNode(this.refs.exporter).value);
       var allowTrimInput = react_dom_default.a.findDOMNode(this.refs.allowTrim);
       var allowRotationInput = react_dom_default.a.findDOMNode(this.refs.allowRotation);
+      var removeFileExtension = react_dom_default.a.findDOMNode(this.refs.removeFileExtension);
       var doRefresh = allowTrimInput.checked !== exporter.allowTrim || allowRotationInput.checked !== exporter.allowRotation;
       allowTrimInput.checked = exporter.allowTrim;
       allowRotationInput.checked = exporter.allowRotation;
+      removeFileExtension.checked = exporter.removeFileExtension == true
+
       this.updateEditCustomTemplateButton();
       this.onExporterPropChanged();
       if (doRefresh) this.onPropChanged();
@@ -44036,6 +44039,157 @@ var PLIST2_PLIST2 = /*#__PURE__*/function (_Splitter) {
   }]);
 }(splitters_Splitter);
 /* harmony default export */ var splitters_PLIST2 = (PLIST2_PLIST2);
+// CONCATENATED MODULE: ./src/client/splitters/DBJson.js
+function DBJson_typeof(o) {
+  "@babel/helpers - typeof";
+
+  return DBJson_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) {
+    return typeof o;
+  } : function (o) {
+    return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o;
+  }, DBJson_typeof(o);
+}
+function DBJson_classCallCheck(a, n) {
+  if (!(a instanceof n)) throw new TypeError("Cannot call a class as a function");
+}
+function DBJson_defineProperties(e, r) {
+  for (var t = 0; t < r.length; t++) {
+    var o = r[t];
+    o.enumerable = o.enumerable || !1, o.configurable = !0, "value" in o && (o.writable = !0), Object.defineProperty(e, DBJson_toPropertyKey(o.key), o);
+  }
+}
+function DBJson_createClass(e, r, t) {
+  return r && DBJson_defineProperties(e.prototype, r), t && DBJson_defineProperties(e, t), Object.defineProperty(e, "prototype", {
+    writable: !1
+  }), e;
+}
+function DBJson_toPropertyKey(t) {
+  var i = DBJson_toPrimitive(t, "string");
+  return "symbol" == DBJson_typeof(i) ? i : i + "";
+}
+function DBJson_toPrimitive(t, r) {
+  if ("object" != DBJson_typeof(t) || !t) return t;
+  var e = t[Symbol.toPrimitive];
+  if (void 0 !== e) {
+    var i = e.call(t, r || "default");
+    if ("object" != DBJson_typeof(i)) return i;
+    throw new TypeError("@@toPrimitive must return a primitive value.");
+  }
+  return ("string" === r ? String : Number)(t);
+}
+function DBJson_callSuper(t, o, e) {
+  return o = DBJson_getPrototypeOf(o), DBJson_possibleConstructorReturn(t, DBJson_isNativeReflectConstruct() ? Reflect.construct(o, e || [], DBJson_getPrototypeOf(t).constructor) : o.apply(t, e));
+}
+function DBJson_possibleConstructorReturn(t, e) {
+  if (e && ("object" == DBJson_typeof(e) || "function" == typeof e)) return e;
+  if (void 0 !== e) throw new TypeError("Derived constructors may only return object or undefined");
+  return DBJson_assertThisInitialized(t);
+}
+function DBJson_assertThisInitialized(e) {
+  if (void 0 === e) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+  return e;
+}
+function DBJson_isNativeReflectConstruct() {
+  try {
+    var t = !Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {}));
+  } catch (t) {}
+  return (DBJson_isNativeReflectConstruct = function _isNativeReflectConstruct() {
+    return !!t;
+  })();
+}
+function DBJson_getPrototypeOf(t) {
+  return DBJson_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function (t) {
+    return t.__proto__ || Object.getPrototypeOf(t);
+  }, DBJson_getPrototypeOf(t);
+}
+function DBJson_inherits(t, e) {
+  if ("function" != typeof e && null !== e) throw new TypeError("Super expression must either be null or a function");
+  t.prototype = Object.create(e && e.prototype, {
+    constructor: {
+      value: t,
+      writable: !0,
+      configurable: !0
+    }
+  }), Object.defineProperty(t, "prototype", {
+    writable: !1
+  }), e && DBJson_setPrototypeOf(t, e);
+}
+function DBJson_setPrototypeOf(t, e) {
+  return DBJson_setPrototypeOf = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function (t, e) {
+    return t.__proto__ = e, t;
+  }, DBJson_setPrototypeOf(t, e);
+}
+
+var DBJson_DBJson = /*#__PURE__*/function (_Splitter) {
+  function DBJson() {
+    DBJson_classCallCheck(this, DBJson);
+    return DBJson_callSuper(this, DBJson, arguments);
+  }
+  DBJson_inherits(DBJson, _Splitter);
+  return DBJson_createClass(DBJson, null, [{
+    key: "check",
+    value: function check(data, cb) {
+      cb(data.indexOf('"SubTexture"') !== -1 && data.indexOf('"imagePath"') !== -1);
+    }
+  }, {
+    key: "finalizeItem",
+    value: function finalizeItem(item) {
+      item.spriteSourceSize = {
+        x: item.frameX,
+        y: item.frameY,
+        w: item.frameWidth,
+        h: item.frameHeight
+      };
+      item.trimmed = item.frame.w !== item.width || item.frame.h !== item.height;
+      return item;
+    }
+  }, {
+    key: "split",
+    value: function split(data, options, cb) {
+      var res = [];
+      try {
+        var json = JSON.parse(data);
+        for (var i = 0; i < json.SubTexture.length; i++) {
+          var element = json.SubTexture[i];
+          var trimmed = element.frameX || element.frameY || element.frameWidth < element.width || element.frameHeight < element.height;
+          res.push({
+            name: splitters_Splitter.fixFileName(element.name),
+            frame: {
+              x: element.x,
+              y: element.y,
+              w: element.width,
+              h: element.height
+            },
+            spriteSourceSize: {
+              x: element.frameX ? -element.frameX : 0,
+              y: element.frameY ? -element.frameY : 0,
+              w: element.width,
+              h: element.height
+            },
+            sourceSize: {
+              w: element.frameWidth ? element.frameWidth : element.width,
+              h: element.frameHeight ? element.frameHeight : element.height
+            },
+            trimmed: trimmed,
+            rotated: false //element.textureRotated
+          });
+        }
+      } catch (e) {}
+      cb(res);
+    }
+  }, {
+    key: "type",
+    get: function get() {
+      return 'DBJson(龙骨)';
+    }
+  }, {
+    key: "inverseRotation",
+    get: function get() {
+      return true;
+    }
+  }]);
+}(splitters_Splitter);
+/* harmony default export */ var splitters_DBJson = (DBJson_DBJson);
 // CONCATENATED MODULE: ./src/client/splitters/index.js
 function splitters_createForOfIteratorHelper(r, e) {
   var t = "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"];
@@ -44105,7 +44259,8 @@ function splitters_arrayLikeToArray(r, a) {
 
 
 
-var splitters_list = [splitters_Grid, splitters_JsonHash, splitters_JsonArray, splitters_XML, splitters_UIKit, splitters_Spine, splitters_PLIST, splitters_PLIST2];
+
+var splitters_list = [splitters_Grid, splitters_JsonHash, splitters_JsonArray, splitters_XML, splitters_UIKit, splitters_Spine, splitters_PLIST, splitters_PLIST2, splitters_DBJson];
 function getSplitterByType(type) {
   var _iterator = splitters_createForOfIteratorHelper(splitters_list),
     _step;

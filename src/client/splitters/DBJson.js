@@ -1,78 +1,68 @@
 import Splitter from './Splitter';
 
-import plist from 'plist';
-
 class DBJson extends Splitter {
     static check(data, cb) {
-        try {
-            this.split(data, null, (res)=>{
-                if(res && res.length > 0){
-                    cb(true);
-                }
-            })            
-            cb(false);
-        }
-        catch(e) {
-            cb(false);
-        }
+        cb(data.indexOf('"SubTexture"') !== -1 && data.indexOf('"imagePath"') !== -1);
     }
-    
+
+    static finalizeItem(item) {
+        item.spriteSourceSize = {
+            x: item.frameX,
+            y: item.frameY,
+            w: item.frameWidth,
+            h: item.frameHeight
+        }
+
+        item.trimmed = item.frame.w !== item.width || item.frame.h !== item.height;
+
+        return item;
+    }
+
     static split(data, options, cb) {
         let res = [];
 
         try {
-            let atlas = plist.parse(data);
-            let names = Object.keys(atlas.frames);
-            
-            for(let name of names) {
-                let item = atlas.frames[name];
-                let str
-                for (const key in item) {
-                    if (Object.hasOwnProperty.call(item, key)) {
-                        str = item[key];
-                        if(typeof str == "string"){
-                            item[key] = str.replace(/{/g, '[').replace(/}/g, ']')
-                        }
-                    }
-                }
-                
-                let frame = JSON.parse(item.textureRect)
-                let offset = JSON.parse(item.spriteOffset)
-                let sourceSize = JSON.parse(item.spriteSourceSize)
-                
-                let trimmed = frame[1][0] < sourceSize[0] ||frame[1][1] < sourceSize[1];
-                
+            let json = JSON.parse(data);
+
+            for (let i = 0; i < json.SubTexture.length; i++) {
+                const element = json.SubTexture[i];
+
+                let trimmed = element.frameX || element.frameY || element.frameWidth < element.width || element.frameHeight < element.height;
                 res.push({
-                    name: Splitter.fixFileName(name),
+                    name: Splitter.fixFileName(element.name),
                     frame: {
-                        x: frame[0][0],
-                        y: frame[0][1],
-                        w: frame[1][0],
-                        h: frame[1][1]
+                        x: element.x,
+                        y: element.y,
+                        w: element.width,
+                        h:  element.height,
                     },
                     spriteSourceSize: {
-                        x: offset[0],
-                        y: offset[1],
-                        w: frame[1][0],
-                        h: frame[1][1]
+                        x: element.frameX ? -element.frameX : 0,
+                        y: element.frameY ? -element.frameY : 0,
+                        w:  element.width,
+                        h:  element.height
                     },
                     sourceSize: {
-                        w: sourceSize[0],
-                        h: sourceSize[1]
+                       w: element.frameWidth ? element.frameWidth : element.width,
+                        h: element.frameHeight ? element.frameHeight : element.height
                     },
                     trimmed: trimmed,
-                    rotated: item.textureRotated
+                    rotated: false//element.textureRotated
                 });
             }
         }
-        catch(e) {
+        catch (e) {
         }
-        
+
         cb(res);
     }
 
     static get type() {
-        return 'DBJson';
+        return 'DBJson(龙骨)';
+    }
+
+    static get inverseRotation() {
+        return true;
     }
 }
 
