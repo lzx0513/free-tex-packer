@@ -40,6 +40,8 @@ class PLIST extends Splitter {
                 let offset = JSON.parse(item.offset)
                 let sourceColorRect = JSON.parse(item.sourceColorRect)
                 let sourceSize = JSON.parse(item.sourceSize)
+                offset[0] += (sourceSize[0]-frame[1][0])/2
+                offset[1] += (sourceSize[1]-frame[1][1])/2
                 
                 let trimmed = frame[1][0] < sourceSize[0] ||frame[1][1] < sourceSize[1];
                 
@@ -52,8 +54,8 @@ class PLIST extends Splitter {
                         h: frame[1][1]
                     },
                     spriteSourceSize: {
-                        x: sourceColorRect[0][0],
-                        y: sourceColorRect[0][1],
+                        x: offset[0],
+                        y: offset[1],
                         w: frame[1][0],
                         h: frame[1][1]
                     },

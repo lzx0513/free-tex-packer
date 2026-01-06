@@ -41079,8 +41079,7 @@ var PackProperties_PackProperties = /*#__PURE__*/function (_React$Component) {
       var doRefresh = allowTrimInput.checked !== exporter.allowTrim || allowRotationInput.checked !== exporter.allowRotation;
       allowTrimInput.checked = exporter.allowTrim;
       allowRotationInput.checked = exporter.allowRotation;
-      removeFileExtension.checked = exporter.removeFileExtension == true
-
+      removeFileExtension.checked = exporter.removeFileExtension == true;
       this.updateEditCustomTemplateButton();
       this.onExporterPropChanged();
       if (doRefresh) this.onPropChanged();
